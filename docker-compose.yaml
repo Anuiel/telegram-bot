@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  anuielbot:
+    build: .
+    env_file:
+      - .env
+    image: "anuiel/anuielbot"
+    ports:
+      - "8888:8888"
+    container_name: "anuielcontainer"
+networks:
+  default:
+    name: bridge-nerwork
+    external: true
