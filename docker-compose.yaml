@@ -8,6 +8,8 @@ services:
     ports:
       - "8888:8888"
     container_name: "anuielcontainer"
+  secondcontainerforfreepts:
+    image: mysql:latest
 networks:
   default:
     name: bridge-nerwork
