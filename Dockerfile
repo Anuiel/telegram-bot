@@ -1,6 +1,6 @@
 FROM python:3
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/telegram_bot
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 8888
 
-CMD [ "python", "./telegram_bot/main.py" ]
+CMD [ "python", "./main.py" ]
